@@ -11,7 +11,7 @@ docker build -t versatile/cassandra:latest cassandra-single-node/.
 
 Run container with port mapping for external connexion 
 ```bash
-docker run -d -p 9042:9042 -p 9160:9160 --name cassandra versatile/cassandra
+docker run -d -p 9042:9042 -p 9160:9160 --name cassandra versatile/cassandra -v /data/cassandra:/var/lib/cassandra
 ```
 
 ### Additional informations
